@@ -1,6 +1,6 @@
 {
   "name": "remark-lint-write-good",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A remark-lint rule to check each paragraph using write-good.",
   "main": "index.js",
   "author": "Horst Gutmann",
