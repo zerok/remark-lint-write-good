@@ -1,0 +1,14 @@
+{
+  "name": "remark-lint-write-good",
+  "version": "1.0.0",
+  "description": "A remark-lint rule to check each paragraph using write-good.",
+  "main": "index.js",
+  "author": "Horst Gutmann",
+  "license": "MIT",
+  "dependencies": {
+    "nlcst-to-string": "^2.0.0",
+    "unified-lint-rule": "^1.0.1",
+    "unist-util-visit": "^1.1.1",
+    "write-good": "^0.11.1"
+  }
+}
