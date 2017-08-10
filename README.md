@@ -1,7 +1,7 @@
 # remark-lint-write-good
 
 This rule for [remark-lint][] uses [write-good][] to check the content of a
-Markdown file for stystic issues:
+Markdown file for stylistic issues:
 
 ```
 {
