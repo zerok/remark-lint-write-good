@@ -9,7 +9,7 @@ Markdown file for stylistic issues:
         "remark-preset-lint-recommended",
         ["remark-lint-write-good", ["warn", {
             "passive": false
-        ]]
+        }]]
     ]
 }
 ```
