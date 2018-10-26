@@ -3,8 +3,15 @@ const visit = require('unist-util-visit');
 const toString = require('nlcst-to-string');
 const writeGood = require('write-good');
 
-module.exports = rule('remark-lint:write-good', (ast, file, options) => {
+function astProcessor(ast, file, options) {
     visit(ast, 'paragraph', (node) => {
+
+        // There seem to be situations where paragraphs are completely empty
+        // which prevents toString from working properly. See #4 for details.
+        if (!('length' in node) && (!('children' in node) || !node.children)) {
+            return;
+        }
+
         const text = toString(node);
         const newLines = findNewlines(text);
         writeGood(text, options).forEach(suggestion => {
@@ -39,7 +46,10 @@ module.exports = rule('remark-lint:write-good', (ast, file, options) => {
             file.message(suggestion.reason, pos);
         });
     });
-});
+}
+
+module.exports = rule('remark-lint:write-good', astProcessor);
+module.exports.astProcessor = astProcessor;
 
 function findNewlines(str) {
     const indices = [];
