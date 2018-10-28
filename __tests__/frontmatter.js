@@ -33,6 +33,9 @@ describe("prepare a paragraph without any children", () => {
             type: "node",
             children: [{
                 type: "paragraph",
+                children: [{
+                    type: "something"
+                }]
             }]
         };
         wgLinter.astProcessor(ast, file, {});

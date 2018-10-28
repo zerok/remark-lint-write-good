@@ -5,14 +5,15 @@ const writeGood = require('write-good');
 
 function astProcessor(ast, file, options) {
     visit(ast, 'paragraph', (node) => {
-
-        // There seem to be situations where paragraphs are completely empty
-        // which prevents toString from working properly. See #4 for details.
-        if (!('length' in node) && (!('children' in node) || !node.children)) {
-            return;
+        let text = "";
+        try {
+            text = toString(node);
+        } catch (e) {
+            // There seem to be situations where paragraphs contain children
+            // without a children property. See #4 for details.
+            return; 
         }
 
-        const text = toString(node);
         const newLines = findNewlines(text);
         writeGood(text, options).forEach(suggestion => {
             let startLineOffset = 0;
