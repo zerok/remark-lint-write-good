@@ -4,7 +4,10 @@ const toString = require('nlcst-to-string');
 const writeGood = require('write-good');
 
 function astProcessor(ast, file, options) {
-    visit(ast, 'paragraph', (node) => {
+    visit(ast, ['paragraph', 'blockquote'], (node, _, parent) => {
+        if (node.type === 'blockquote') {
+            return visit.SKIP;
+        }
         let text = "";
         try {
             text = toString(node);
