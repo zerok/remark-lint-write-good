@@ -53,7 +53,7 @@ acorn@^6.0.1:
 
 adverb-where@^0.2.1:
   version "0.2.1"
-  resolved "https://artifacts.int.corefiling.com/api/npm/cfl-npm/adverb-where/-/adverb-where-0.2.1.tgz#5c639ed02d06c4c61d64296cf72f6ea39e682a49"
+  resolved "https://registry.yarnpkg.com/adverb-where/-/adverb-where-0.2.1.tgz#5c639ed02d06c4c61d64296cf72f6ea39e682a49"
   integrity sha1-XGOe0C0GxMYdZCls9y9uo55oKkk=
 
 ajv@^5.3.0:
@@ -642,7 +642,7 @@ combined-stream@^1.0.6, combined-stream@~1.0.6:
 
 commander@^2.19.0:
   version "2.20.0"
-  resolved "https://artifacts.int.corefiling.com/api/npm/cfl-npm/commander/-/commander-2.20.0.tgz#d58bb2b5c1ee8f87b0d340027e9e94e222c5a422"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-2.20.0.tgz#d58bb2b5c1ee8f87b0d340027e9e94e222c5a422"
   integrity sha1-1YuytcHuj4ew00ACfp6U4iLFpCI=
 
 commander@~2.17.1:
@@ -2498,7 +2498,7 @@ nlcst-to-string@^2.0.0:
 
 no-cliches@^0.2.2:
   version "0.2.2"
-  resolved "https://artifacts.int.corefiling.com/api/npm/cfl-npm/no-cliches/-/no-cliches-0.2.2.tgz#8dca569aa9eb28a8c3f431804a5aadd524607f0a"
+  resolved "https://registry.yarnpkg.com/no-cliches/-/no-cliches-0.2.2.tgz#8dca569aa9eb28a8c3f431804a5aadd524607f0a"
   integrity sha1-jcpWmqnrKKjD9DGASlqt1SRgfwo=
 
 node-int64@^0.4.0:
@@ -3573,7 +3573,7 @@ to-regex@^3.0.1, to-regex@^3.0.2:
 
 too-wordy@^0.2.2:
   version "0.2.2"
-  resolved "https://artifacts.int.corefiling.com/api/npm/cfl-npm/too-wordy/-/too-wordy-0.2.2.tgz#e02b43a9e0817621a71db5d7d1c67634820a23d0"
+  resolved "https://registry.yarnpkg.com/too-wordy/-/too-wordy-0.2.2.tgz#e02b43a9e0817621a71db5d7d1c67634820a23d0"
   integrity sha1-4CtDqeCBdiGnHbXX0cZ2NIIKI9A=
 
 tough-cookie@>=2.3.3, tough-cookie@^2.3.4, tough-cookie@~2.4.3:
@@ -3923,7 +3923,7 @@ write-file-atomic@^2.1.0:
 
 write-good@^1.0.2:
   version "1.0.2"
-  resolved "https://artifacts.int.corefiling.com/api/npm/cfl-npm/write-good/-/write-good-1.0.2.tgz#0b09ed8082f85ebb2fb325b9c7128295681d5b2d"
+  resolved "https://registry.yarnpkg.com/write-good/-/write-good-1.0.2.tgz#0b09ed8082f85ebb2fb325b9c7128295681d5b2d"
   integrity sha1-CwntgIL4XrsvsyW5xxKClWgdWy0=
   dependencies:
     adverb-where "^0.2.1"
